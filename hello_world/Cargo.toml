@@ -1,6 +1,34 @@
 [package]
 name = "hello_world"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+authors = ["Your Name Stephan.Gabor@gmail.com>"]
+description = "My first Rust project"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+# ====================== Common Development Dependencies ======================
+[dev-dependencies]
+# Add testing libraries here if needed
+
+# ====================== Build Settings ======================
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+# ====================== Rust Analyzer / Clippy Settings ======================
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
