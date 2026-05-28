@@ -6,7 +6,6 @@ authors = ["Your Name Stephan.Gabor@gmail.com>"]
 description = "My first Rust project"
 license = "MIT OR Apache-2.0"
 
-=======
 # === Metadata to fix Clippy warnings ===
 repository = "https://github.com/CodeCarnifex/rust_from_scratch"  # Change to your repo (or leave as "")
 readme = "README.md"
